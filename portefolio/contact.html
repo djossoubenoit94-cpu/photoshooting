@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expériences – Narcisse AVLESSI</title>
+    <link rel="stylesheet" href="styleglobal.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="skills.html">COMPÉTENCES</a></li>
+                <li><a href="projects.html">PROJETS</a></li>
+                <li><a href="education.html">ÉDUCATION</a></li>
+                <li><a href="experience.html">EXPÉRIENCES</a></li>
+                <li><a href="apropos.html">À PROPOS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section> 
+
+    <h1 class="contact">Entrons en contact</h1>
+    <p class="disp">Je suis à votre écoute pour toute collaboration, question technique ou simple prise de contact. Choisissez la méthode qui vous convient — je vous répondrai avec clarté et rapidité.</p><br>
+
+    <p><h3 class="formular">Formulaire de contact</h3></p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <label for="objet">Objet</label>
+        <select id="objet" name="objet" required>
+            <option value="">Sélectionnez un motif</option>
+            <option value="collaboration">Demande de collaboration</option>
+            <option value="mission">Proposition de mission / Freelance</option>
+            <option value="support">Question technique / Support</option>
+            <option value="stage">Stage / Opportunité</option>
+            <option value="autre">Autre</option>
+        </select>
+
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom et prénoms(s)" required>
+
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" name="email" placeholder="exemple@email.com" pattern=".+@gmail.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" minlength="20" placeholder="Expliquez brièvement votre projet, vos besoins ou votre question." required></textarea>
+
+        <button type="submit">Envoyer le message</button>
+
+    </form>
+
+    </section>
+
+    <footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p>&copy; 2025 Narcisse AVLESSI. Tous droits réservés.</p>
+            <p>Licence MIA – Université d’Abomey-Calavi</p>
+        </div>
+        <div class="footer-contact">
+            <p>Contact : <a href="mailto:narcisseavlessi58@gmail.com">narcisseavlessi58@gmail.com</a></p>
+            <p>Tel : +229 52 35 23 09</p>
+        </div>
+        <div class="footer-socials">
+            <a href="#" target="_blank">LinkedIn</a> |
+            <a href="#" target="_blank">GitHub</a> |
+            <a href="#" target="_blank">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>CV — Your Name</title>
+    <meta name="description" content="Animated CV — one-page resume website." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#home" aria-label="Go to top">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text">Your Name</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            <span class="nav__toggleBars" aria-hidden="true"></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+          <div id="nav-links" class="nav__links">
+            <a class="nav__link" href="#about">About</a>
+            <a class="nav__link" href="#skills">Skills</a>
+            <a class="nav__link" href="#experience">Experience</a>
+            <a class="nav__link" href="#projects">Projects</a>
+            <a class="nav__link" href="#education">Education</a>
+            <a class="nav__link" href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="topbar__actions">
+          <button id="themeBtn" class="btn btn--ghost" type="button" aria-label="Toggle theme">
+            <span class="btn__icon" aria-hidden="true">◐</span>
+          </button>
+          <a class="btn btn--primary" href="#contact">Hire me</a>
+        </div>
+      </div>
+      <div class="topbar__progress" aria-hidden="true">
+        <div id="scrollProgress" class="topbar__progressBar"></div>
+      </div>
+    </header>
+
+    <main id="content">
+      <section id="home" class="hero">
+        <div class="container hero__inner">
+          <div class="hero__copy">
+            <p class="pill reveal" data-reveal>
+              <span class="pill__dot" aria-hidden="true"></span>
+              Available for freelance / internship
+            </p>
+            <h1 class="hero__title reveal" data-reveal>
+              <span class="gradientText">Frontend Developer</span>
+              building fast, accessible web experiences.
+            </h1>
+            <p class="hero__subtitle reveal" data-reveal data-delay="80">
+              I’m <strong>Your Name</strong>. I craft clean UI, smooth animations, and reliable code.
+              Based in <strong>Your City</strong>.
+            </p>
+
+            <div class="hero__cta reveal" data-reveal data-delay="140">
+              <a class="btn btn--primary" href="#projects">View projects</a>
+              <a class="btn btn--ghost" href="#contact">Contact</a>
+              <a class="btn btn--ghost" href="./cv.pdf" download>Download CV</a>
+            </div>
+
+            <div class="hero__stats reveal" data-reveal data-delay="200">
+              <div class="stat">
+                <div class="stat__value">
+                  <span class="countup" data-count="12">0</span>+
+                </div>
+                <div class="stat__label">Projects shipped</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">
+                  <span class="countup" data-count="2">0</span>y
+                </div>
+                <div class="stat__label">Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">
+                  <span class="countup" data-count="25">0</span>+
+                </div>
+                <div class="stat__label">Happy clients</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero__card reveal" data-reveal data-delay="120" aria-label="Profile card">
+            <div class="profile">
+              <div class="profile__avatar" aria-hidden="true">
+                <span class="profile__avatarRing"></span>
+                <span class="profile__avatarText">YN</span>
+              </div>
+              <div class="profile__meta">
+                <p class="profile__name">Your Name</p>
+                <p class="profile__role">Frontend Developer</p>
+              </div>
+              <div class="profile__chips" aria-label="Highlights">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">React</span>
+              </div>
+              <div class="profile__links" aria-label="Social links">
+                <a class="iconLink" href="#" aria-label="GitHub">GitHub</a>
+                <a class="iconLink" href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a class="iconLink" href="mailto:you@email.com" aria-label="Email">Email</a>
+              </div>
+            </div>
+            <div class="cardGlow" aria-hidden="true"></div>
+          </aside>
+        </div>
+        <div class="hero__bg" aria-hidden="true"></div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title reveal" data-reveal>About</h2>
+            <p class="section__subtitle reveal" data-reveal data-delay="80">
+              A quick intro, focus areas, and what I’m aiming for next.
+            </p>
+          </div>
+          <div class="grid grid--2">
+            <div class="panel reveal" data-reveal>
+              <h3 class="panel__title">Summary</h3>
+              <p class="muted">
+                I enjoy turning ideas into polished interfaces. I care about performance, accessibility,
+                and small details that make a product feel premium.
+              </p>
+              <ul class="list">
+                <li><strong>Strengths:</strong> UI architecture, design systems, responsive layouts</li>
+                <li><strong>Also:</strong> API integration, forms, authentication flows</li>
+                <li><strong>Looking for:</strong> Web dev role / freelance projects</li>
+              </ul>
+            </div>
+            <div class="panel reveal" data-reveal data-delay="120">
+              <h3 class="panel__title">Quick info</h3>
+              <div class="kv">
+                <div class="kv__row"><span class="kv__k">Location</span><span class="kv__v">Your City</span></div>
+                <div class="kv__row"><span class="kv__k">Email</span><span class="kv__v">you@email.com</span></div>
+                <div class="kv__row"><span class="kv__k">Phone</span><span class="kv__v">+00 000 000 000</span></div>
+                <div class="kv__row"><span class="kv__k">Languages</span><span class="kv__v">English, French</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title reveal" data-reveal>Skills</h2>
+            <p class="section__subtitle reveal" data-reveal data-delay="80">
+              Animated skill bars that fill when the section enters view.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="panel reveal" data-reveal>
+              <h3 class="panel__title">Frontend</h3>
+              <div class="skills">
+                <div class="skill" data-skill="92">
+                  <div class="skill__top">
+                    <span>HTML / Accessibility</span><span class="skill__pct">92%</span>
+                  </div>
+                  <div class="skill__bar"><span class="skill__fill"></span></div>
+                </div>
+                <div class="skill" data-skill="88">
+                  <div class="skill__top">
+                    <span>CSS / UI</span><span class="skill__pct">88%</span>
+                  </div>
+                  <div class="skill__bar"><span class="skill__fill"></span></div>
+                </div>
+                <div class="skill" data-skill="84">
+                  <div class="skill__top">
+                    <span>JavaScript</span><span class="skill__pct">84%</span>
+                  </div>
+                  <div class="skill__bar"><span class="skill__fill"></span></div>
+                </div>
+                <div class="skill" data-skill="78">
+                  <div class="skill__top">
+                    <span>React</span><span class="skill__pct">78%</span>
+                  </div>
+                  <div class="skill__bar"><span class="skill__fill"></span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel reveal" data-reveal data-delay="120">
+              <h3 class="panel__title">Tools & workflow</h3>
+              <div class="skills">
+                <div class="skill" data-skill="80">
+                  <div class="skill__top">
+                    <span>Git / GitHub</span><span class="skill__pct">80%</span>
+                  </div>
+                  <div class="skill__bar"><span class="skill__fill"></span></div>
+                </div>
+                <div class="skill" data-skill="75">
+                  <div class="skill__top">
+                    <span>Figma</span><span class="skill__pct">75%</span>
+                  </div>
+                  <div class="skill__bar"><span class="skill__fill"></span></div>
+                </div>
+                <div class="skill" data-skill="72">
+                  <div class="skill__top">
+                    <span>Testing basics</span><span class="skill__pct">72%</span>
+                  </div>
+                  <div class="skill__bar"><span class="skill__fill"></span></div>
+                </div>
+                <div class="skill" data-skill="70">
+                  <div class="skill__top">
+                    <span>Performance</span><span class="skill__pct">70%</span>
+                  </div>
+                  <div class="skill__bar"><span class="skill__fill"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title reveal" data-reveal>Experience</h2>
+            <p class="section__subtitle reveal" data-reveal data-delay="80">
+              Timeline with animated markers as you scroll.
+            </p>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline__item reveal" data-reveal>
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <div class="timeline__top">
+                  <h3 class="timeline__role">Frontend Developer</h3>
+                  <span class="timeline__date">2025 — Present</span>
+                </div>
+                <p class="timeline__place">Company / Client</p>
+                <ul class="list">
+                  <li>Built responsive pages and components with a reusable UI kit.</li>
+                  <li>Improved Lighthouse performance and reduced bundle size.</li>
+                  <li>Integrated APIs and handled loading/error states cleanly.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline__item reveal" data-reveal data-delay="100">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <div class="timeline__top">
+                  <h3 class="timeline__role">Web Developer Intern</h3>
+                  <span class="timeline__date">2024 — 2025</span>
+                </div>
+                <p class="timeline__place">Startup / Agency</p>
+                <ul class="list">
+                  <li>Implemented landing pages with smooth animations.</li>
+                  <li>Worked with designers to refine UX and visual consistency.</li>
+                  <li>Fixed bugs and improved accessibility across pages.</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="projects" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title reveal" data-reveal>Projects</h2>
+            <p class="section__subtitle reveal" data-reveal data-delay="80">
+              Cards with hover glow and subtle motion.
+            </p>
+          </div>
+
+          <div class="cards">
+            <article class="card reveal" data-reveal>
+              <div class="card__top">
+                <h3 class="card__title">Portfolio Website</h3>
+                <span class="badge">UI</span>
+              </div>
+              <p class="muted">
+                A fast, responsive portfolio with animations and clean typography.
+              </p>
+              <div class="card__tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+              </div>
+              <div class="card__links">
+                <a href="#" class="textLink">Live</a>
+                <a href="#" class="textLink">Code</a>
+              </div>
+            </article>
+
+            <article class="card reveal" data-reveal data-delay="100">
+              <div class="card__top">
+                <h3 class="card__title">Dashboard</h3>
+                <span class="badge">App</span>
+              </div>
+              <p class="muted">A small dashboard with charts, filters, and state management.</p>
+              <div class="card__tags">
+                <span class="tag">React</span><span class="tag">API</span><span class="tag">UX</span>
+              </div>
+              <div class="card__links">
+                <a href="#" class="textLink">Live</a>
+                <a href="#" class="textLink">Code</a>
+              </div>
+            </article>
+
+            <article class="card reveal" data-reveal data-delay="160">
+              <div class="card__top">
+                <h3 class="card__title">Landing Page</h3>
+                <span class="badge">Marketing</span>
+              </div>
+              <p class="muted">Pixel-perfect marketing page with scroll-triggered animations.</p>
+              <div class="card__tags">
+                <span class="tag">A11y</span><span class="tag">Performance</span><span class="tag">SEO</span>
+              </div>
+              <div class="card__links">
+                <a href="#" class="textLink">Live</a>
+                <a href="#" class="textLink">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title reveal" data-reveal>Education</h2>
+            <p class="section__subtitle reveal" data-reveal data-delay="80">
+              Add your diploma, bootcamp, or certifications.
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="panel reveal" data-reveal>
+              <h3 class="panel__title">Degree / Program</h3>
+              <p class="muted">School / University — 2022 — 2025</p>
+              <ul class="list">
+                <li>Key courses: Web dev, UI/UX, databases</li>
+                <li>Highlights: top projects, awards, hackathons</li>
+              </ul>
+            </div>
+
+            <div class="panel reveal" data-reveal data-delay="120">
+              <h3 class="panel__title">Certifications</h3>
+              <ul class="list">
+                <li>Responsive Web Design</li>
+                <li>JavaScript Algorithms</li>
+                <li>Accessibility fundamentals</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title reveal" data-reveal>Contact</h2>
+            <p class="section__subtitle reveal" data-reveal data-delay="80">
+              Send a message (opens your email client).
+            </p>
+          </div>
+
+          <div class="grid grid--2">
+            <form class="panel form reveal" data-reveal id="contactForm">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" autocomplete="name" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@email.com"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project…"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn--primary" type="submit">Send</button>
+              <p class="form__hint muted" id="formHint">
+                This form uses a <code>mailto:</code> link (no backend needed).
+              </p>
+            </form>
+
+            <div class="panel reveal" data-reveal data-delay="120">
+              <h3 class="panel__title">Direct</h3>
+              <div class="kv">
+                <div class="kv__row">
+                  <span class="kv__k">Email</span>
+                  <span class="kv__v"><a class="textLink" href="mailto:you@email.com">you@email.com</a></span>
+                </div>
+                <div class="kv__row">
+                  <span class="kv__k">Phone</span>
+                  <span class="kv__v"><a class="textLink" href="tel:+0000000000">+00 000 000 000</a></span>
+                </div>
+                <div class="kv__row">
+                  <span class="kv__k">GitHub</span>
+                  <span class="kv__v"><a class="textLink" href="#">github.com/yourname</a></span>
+                </div>
+                <div class="kv__row">
+                  <span class="kv__k">LinkedIn</span>
+                  <span class="kv__v"><a class="textLink" href="#">linkedin.com/in/yourname</a></span>
+                </div>
+              </div>
+
+              <div class="callout">
+                <p class="callout__title">Tip</p>
+                <p class="muted">
+                  Replace placeholders (name, links, experience) and add your real <code>cv.pdf</code>
+                  in this folder.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> Your Name. Built with HTML/CSS/JS.</p>
+        <a class="textLink" href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <button id="toTop" class="toTop" type="button" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
